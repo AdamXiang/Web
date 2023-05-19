@@ -1,0 +1,26 @@
+body {
+  background-color:seashell;
+}
+
+.card {
+  
+  border-radius: 8px;
+  max-width: 75%;
+  max-height: 75%;
+  padding: 0px;
+}
+
+.card-img-top {
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 2px 4px 7px #505e6c;
+}
+
+.called-name {
+  position:absolute;
+  bottom: -15px;
+  color:orangered;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
