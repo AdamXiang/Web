@@ -1,0 +1,116 @@
+/* 讓所有標籤都先把預設的 padding, margin 去除，像是 body 會有預設的 margin */
+* {
+  padding: 0;
+  margin: 0;
+  /* border-box: use this setting will not increase the width of the block and will not generate the horizontal scrollbar  */
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+*/
+
+header {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #3b383c;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  /* use padding-left to set the left padding between nav and ul */
+  padding-left: 1rem;
+}
+
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a {
+  color: rgb(192, 192, 192);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.active {
+  color: white;
+}
+
+div.div1 {
+  padding: 2rem 2rem 0;
+}
+
+div#s1 {
+  display: flex;
+}
+
+div.focus {
+  display: flex;
+  justify-content: center;
+}
+
+p.first--p {
+  padding: 1rem 0 0;
+}
+
+p.formula {
+  font-size: 1.5rem;
+  color: red;
+}
+
+div.div1 ul.rule {
+  list-style-type: decimal;
+  padding: 0 1rem;
+}
+
+div.div1 ul.additional {
+  padding: 0 1rem;
+  list-style-type: georgian;
+}
+
+div.div1 ul.additional li a {
+  text-decoration: none;
+  color: indianred;
+  transition: all 0.25 ease;
+}
+
+div.div1 ul.additional li a:hover {
+  cursor: pointer;
+  color: crimson;
+}
+
+section.left {
+  width: 32%;
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+section.right {
+  width: 68%;
+  padding: 1rem;
+}

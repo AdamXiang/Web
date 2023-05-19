@@ -1,0 +1,113 @@
+/* 讓所有標籤都先把預設的 padding, margin 去除，像是 body 會有預設的 margin */
+* {
+  padding: 0;
+  margin: 0;
+  /* border-box: use this setting will not increase the width of the block and will not generate the horizontal scrollbar  */
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}*/
+
+header {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #3b383c;
+}
+
+/** 
+two types of nav bar
+1. 在 li 中設定 padding
+2. 在 li 中設定 display: flex (目的是可以調整 padding)；而 padding 設定在 anchor tag 裡
+**/
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  /* use padding-left to set the left padding between nav and ul */
+  padding-left: 1rem;
+}
+
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a {
+  color: rgb(192, 192, 192);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.left {
+  flex: 4 1 550px;
+}
+
+section.left,
+section.right {
+  padding: 1.5rem;
+}
+
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+}
+
+section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.active {
+  color: white;
+}
+
+/* CTRL + F5 可以看到網頁的變化（RWD） */
+#curve_chart {
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #curve_chart {
+    width: 100%;
+    height: 30%;
+  }
+}
